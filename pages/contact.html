@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="bio.html">Biografía</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contacto</a>
+
+        </nav>
+    </header>
+
+
+    <main class="container">
+        <h3>¿Quieres venir conmigo de viaje? Respóndeme a las siguientes preguntas y veremos si estas preparado
+            para acompañarme en mis aventuras.</h3>
+        <div class="container-column">
+            <div class="box1">
+
+                <fieldset class="fieldset1">
+                    <legend><b>El club de Miga la hormiga</b></legend>
+                    <form>
+                        <p><b><em> Formulario de aventuras</em></b></p>
+                        <br>
+                        <label for="name">¿Cómo te llaman en tu colonia?</label><br>
+                        <input type="text" class="name" name="name"><br>
+                        <br>
+                        <label for="quantity">Edad hormiguil</label><br>
+                        <input type="number" class="quantity" name="quantity" min="50"><br>
+                        <br>
+
+                        <p>¿Te gustan las aventuras?</p>
+                        <input type="checkbox" class="select" name="select" value="si">
+                        <label for="select"> Sí</label><br>
+                        <input type="checkbox" class="select" name="select" value="no">
+                        <label for="seclect"> No</label><br>
+                        <input type="checkbox" class="select" name="select" value="meh">
+                        <label for="seclect"> Meh</label><br>
+
+                        <p>
+                            <label for="multilínea">¿Qué tipo de aventuras te gustan?</label>
+                        </p>
+                        <textarea class="multilinea" name="multilnea" rows="4" cols="50"
+                            placeholder="Escribe unas líneas sobre tus aventuras"></textarea>
+                        <br>
+                        <br>
+                        <label for="email">Correo eclectrónico hormiguil</label>
+                        <br>
+                        <input type="email" class="email" name="email" placeholder="ejemplo@gmail.com" required>
+                        <input type="submit" value="Submit">
+                        <br>
+                        <br>
+                        <label for="phone">Telf. hormiguil</label>
+                        <br>
+                        <input type="tel" class="phone" name="phone" placeholder="123456789" pattern="[0-9]{9}"
+                            required><br><br>
+                    </form>
+                    <img src="../assets/hormiga-aventurera.jpg" alt="">
+                </fieldset>
+            </div>
+
+            <div class="box2">
+                <fieldset class="fieldset2">
+                    <legend><b>Tipo de aventuras</b></legend>
+                    <form>
+                        <p><b> <em>Mis aventuras son...</em></b></p>
+                        <br>
+                        <label for="date">Última aventura</label>
+                        <input type="date" class="date" name="date">
+                        <br>
+
+                        <br>
+                        <label for="joy">Disfruté (poco - mucho)</label>
+                        <input type="range" class="joy" name="joy" min="bit" max="lot">
+                        <input type="submit" value="Submit">
+                        <br>
+                        <br>
+
+                        <label for="more">Soy más de...</label>
+                        <br><br>
+                        <select class="more" name="more" size="4" multiple>
+                            <option value="mountain">Montaña</option>
+                            <option value="coast">Costa</option>
+                            <option value="city">Ciudad</option>
+                            <option value="village">Pueblo</option>
+                        </select><br>
+                        <input type="submit">
+                        <br>
+                        <br>
+                        <p>Especifícame un poco más</p>
+                        <label for="mountain">Montaña</label>
+                        <select class="mountain" name="mountain">
+                            <option value="hikking">Senderismo</option>
+                            <option value="climbing">Escalada</option>
+                            <option value="speleology">Espeleología</option>
+                            <option value="canyoning">Barranquismo</option>
+                        </select>
+
+                        <br>
+                        <label for="coast">Costa</label>
+                        <select class="coast" name="coast">
+                            <option value="beach">Playa</option>
+                            <option value="cliff">Acantilado</option>
+                        </select>
+
+                        <br>
+                        <label for="city">Ciudad </label>
+                        <select class="city" name="city">
+                            <option value="city-old">Histórica</option>
+                            <option value="city-new">Moderna</option>
+                            <option value="mix">Mezcla</option>
+                        </select>
+
+                        <br>
+                        <label for="village">Pueblo </label>
+                        <select class="village" name="village">
+                            <option value="village-coast">Costero</option>
+                            <option value="village-inside">Interior</option>
+
+                        </select>
+                        <br>
+                        <br>
+
+                        <p>Próximo destino</p>
+                        <input list="datalist" name="datalist">
+
+                        <input type="submit">
+                        <input type="reset">
+                        <br>
+                        <p>Puedes tener más ideas sobre dónde viajer en el siguiente enlace:
+                            <br>
+                            <a href="https://www.intermundial.es/blog/lugares-irreales-libros/" tabindex="3"
+                                target="_blank">
+                                <br> <em> Viajar libres</em></a>
+                        </p>
+                        <br>
+
+                    </form>
+
+                </fieldset>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>¡Gracias por compartir tus intereses!</p>
+    </footer>
+    
+</body>
+
+</html>

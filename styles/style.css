@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,700&display=swap');
+
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-image: url("https://www.fondos12.com/data/big/2/hormigas-43130-2560x1600__wallpaper_480x300.jpg");
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    /* border: 2px solid black; */
+}
+
+a {
+    all: unset;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+a:hover {
+    color: gray;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 440px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.container-column {
+    display: flex;
+    /* border: 2px solid green; */
+
+}
+
+.box1, .box2 {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+}
+
+li:hover {
+    color: gray;
+}
+
+.box3 {
+    display: flex;
+    /* border: 2px solid purple; */
+}
+
+.box4 {
+    display: flex;
+    margin-bottom: 200px;
+    /* border: 2px solid yellow; */
+}
+
+img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+ em:hover {
+    color: gray;
+ }
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+
+/* Responsive móvil */
+@media (max-width: 380px) {
+    p {
+        font-size: 12px;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        max-width: 375px;
+    
+    }
+    .container-column { 
+        flex-direction: column;
+        max-width: 370px;
+    
+    }
+    .box1 {
+        flex-direction: column;
+        max-width: 365px;
+    }
+
+    .box2 {
+        flex-direction: column;
+        max-width: 365px;
+    }
+    .box3 {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .box4 {
+        flex-direction: column;
+        max-width: 350px;
+    }
+
+    .box1 img, .box2 img, .box3 img {
+        max-width: 180px;
+    }
+
+    video {
+        max-width: 250px;
+    }
+
+    .fieldset1, .fieldset2 {
+        max-width: 280px;
+        font-size: 12px;
+    }
+
+    .fieldset1 img {
+        max-width: 200px;
+    }
+
+    form {
+        max-width: 260px;
+        font-size: 12px;
+    }
+
+    textarea {
+        max-width: 240px;
+        font-size: 12px;
+    }
+
+    li, h3, b, em, label, select, input, option {
+        font-size: 12px;
+    }
+    footer {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+
+/* Responsive tablet */
+
+@media (max-width: 800px){
+    p {
+        font-size: 15px;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+    }
+
+    .container {
+        max-width: 750px;
+    }
+
+    .container-column { 
+        max-width: 745px;
+    }
+
+    .box1 {
+        max-width: 740px;
+    }
+
+    .box2 {
+        max-width: 740px;
+    }
+
+    .box3 {
+        max-width: 600px;
+    }
+
+    .box4 {
+        max-width: 600px;
+    }
+
+    .box1 img, .box2 img {
+        max-width: 180px;
+    }
+
+    .box3 img {
+        max-width: 120px;
+        padding: 0px;
+        margin-left: 120px;
+    }
+
+    video {
+        max-width: 200px;
+        margin-top: 0%;
+    }
+
+    .fieldset1, .fieldset2 {
+        max-width: 280px;
+        font-size: 20px;
+    }
+
+    .fieldset1 img {
+        max-width: 200px;
+    }
+
+    form {
+        max-width: 260px;
+        font-size: 15px;
+    }
+
+    textarea {
+        max-width: 240px;
+        font-size: 15px;
+    }
+
+    li, h3, b, em, label, select, input, option {
+        font-size: 15px;
+    }
+    footer {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+
+/* Responsive ordenador */
+
+@media (max-width: 1050px) {
+    p {
+        font-size: 20px;
+    }
+
+    nav {
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .container {
+       
+        max-width: 1000px;
+    }
+
+    .container-column { 
+       
+        max-width: 980px;
+    }
+
+    .box1, .box2 {
+        max-width: 970px;
+
+    }
+
+    .box3 {
+        max-width: 950px;
+
+    }
+
+    .box4 {
+        max-width: 945px;
+    }
+
+    .box1 img, .box2 img {
+        max-width: 180px;
+    }
+
+    .box3 img {
+        max-width: 180px;
+        margin-left: 130px;
+    }
+
+    video {
+        max-width: 250px;
+        margin-left: 10px;
+    }
+
+    .fieldset1, .fieldset2 {
+        max-width: 900px;
+        font-size: 20px;
+    }
+
+    .fieldset1 img {
+        max-width: 200px;
+    }
+
+    form {
+        max-width: 260px;
+        font-size: 20px;
+    }
+
+    textarea {
+        max-width: 240px;
+        font-size: 20px;
+    }
+
+    li, h3, b, em, label, select, input, option {
+        font-size: 20px;
+    }
+    footer {
+        display: flex;
+        gap: 10px;
+    }
+}
